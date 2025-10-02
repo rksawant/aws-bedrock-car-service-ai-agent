@@ -1,0 +1,41 @@
+{
+  "openapi": "3.0.0",
+  "info": { "title": "Car Service API", "version": "1.0.0" },
+  "paths": {
+    "/serviceinfo": {
+      "post": {
+        "summary": "Get service info",
+        "operationId": "GetServiceInfo",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "plate_number": { "type": "string" }
+                },
+                "required": ["plate_number"]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Service info found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": { "type": "string" }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
