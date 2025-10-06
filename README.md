@@ -27,6 +27,3 @@ This project is perfect to demonstrate:
 - ✅ Realistic use case (car service)
 - ✅ API deployment and testing
 
-## 📜 License
-MIT License
-"# aws-bedrock-car-service-ai-agent" 
